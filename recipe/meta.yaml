@@ -11,11 +11,7 @@ source:
 
 build:
   number: 0
-  skip: True  # [win]
-  script:
-   - make CC=$CC -f unix/Makefile generic
-   - mkdir $PREFIX/bin
-   - mv unzip $PREFIX/bin
+  skip: True  # [win and vc<14]
 
 requirements:
   build:
